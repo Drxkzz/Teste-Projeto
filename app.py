@@ -11,6 +11,10 @@ def ola_mundo():
 def teste():
     return  {"teste": "teste"}
 
+@app.get("/aluno")
+def teste():
+    return  {"nome": "joao", "turma": "IMI3"}
+
 
 if __name__ == '__main__':
     uvicorn.run(app, host='0.0.0.0', port = 8000)
